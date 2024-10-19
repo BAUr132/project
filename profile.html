@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль пользователя</title>
+    <link rel="stylesheet" href="prostyle.css">
+</head>
+<body>
+
+			
+			
+    <div class="profile-container">
+        <!-- Аватар и имя пользователя -->
+        <div class="profile-header">
+            <img src="pictures/avatar.png" alt="Аватар" class="avatar">
+            <h1 class="username">Excited Dog</h1>
+            <p class="description">Это анонимное имя используется для всех ваших операций на Маркете услуг.</p>
+        </div>
+
+	<div class="home">
+            <div class="home-item" onclick="location.href='main.html';">
+                <img src="pictures/home-page.png" alt="Профиль" class="menu-icon">
+            </div>
+			</div>
+        <!-- Статистика -->
+        <div class="stats-section">
+            <div class="stat-item">
+                <h2>0</h2>
+                <p>Количество сделок</p>
+            </div>
+            <div class="stat-item">
+                <h2>0%</h2>
+                <p>Завершенные сделки</p>
+            </div>
+        </div>
+
+        <!-- Настройки оплаты -->
+        <div class="payment-settings">
+            <div class="settings-item">
+                <img src="pictures/payment.png" alt="Настройки оплаты" class="icon">
+                <p>Настройки оплаты</p>
+            </div>
+        </div>
+
+        <!-- Ваши объявления -->
+        <div class="ads-section">
+            <h2>Ваши объявления</h2>
+            <button class="create-ad-btn">Создать объявление</button>
+        </div>
+
+        <!-- Навигация между Покупкой и Продажей -->
+        <div class="nav-section">
+            <button class="nav-btn active">Покупка</button>
+            <button class="nav-btn">Продажа</button>
+        </div>
+    </div>
+	<script src="script.js">
+</body>
+</html>

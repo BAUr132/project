@@ -1,0 +1,145 @@
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1f27;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Секция с аватаром и именем */
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.home-item {
+	position: absolute;
+	width: 100px;
+	height: 10px;
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #999;
+}
+
+/* Статистика */
+.stats-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.stat-item p {
+    font-size: 0.9em;
+    color: #999;
+}
+
+/* Настройки оплаты */
+.payment-settings {
+    margin-bottom: 20px;
+}
+
+.settings-item {
+    display: flex;
+    align-items: center;
+    background-color: #3556a2;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-item:active {
+    background-color: #223665;
+    transform: scale(0.95); /* Уменьшение кнопки при нажатии */
+    margin: 5px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.settings-item p {
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+/* Секция с объявлениями */
+.ads-section {
+    margin-bottom: 20px;
+}
+
+.ads-section h2 {
+    font-size: 1.2em;
+    color: #5cb85c;
+    margin-bottom: 10px;
+}
+
+.create-ad-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-ad-btn:hover {
+    background-color: #4cae4c;
+}
+
+/* Навигация */
+.nav-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    background-color: #3556a2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-btn.active {
+    background-color: #4cae4c;
+}
+
+.nav-btn:hover {
+    background-color: #4cae4c;
+}
