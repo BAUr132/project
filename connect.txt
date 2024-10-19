@@ -1,0 +1,25 @@
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo
+from telegram.ext import Application, CommandHandler
+
+
+
+# Команда для открытия WebApp
+async def start(update: Update, context):
+    keyboard = [
+        [InlineKeyboardButton(text="Открыть Mini App", web_app=WebAppInfo(url="https://elated-banzai.195-210-46-18.plesk.page/main.html"))]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await context.bot.send_message(chat_id=update.effective_chat.id, text="Нажмите кнопку ниже для запуска Mini App", reply_markup=reply_markup)
+
+# Запуск бота
+def main():
+    application = Application.builder().token("7448199353:AAHXfDLFhLJX5kNDSkxUC4RnoTmAxOaaPwg").build()
+    application.add_handler(CommandHandler("start", start))
+    application.run_polling()
+
+
+
+
+if __name__ == '__main__':
+    main()
+
